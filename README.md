@@ -1,7 +1,7 @@
 # Sprint Challenge: Advanced CSS and Intro to JavaScript - Influential Artists
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
-
+- initial change
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS and introductory JavaScript concepts. During this Sprint, you studied responsive web design, variable declaration, conditionals, loops, functions, arrays, and objects. In your challenge this week, you will demonstrate proficiency by creating a website of influential artists with data from a `JSON` object.
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
