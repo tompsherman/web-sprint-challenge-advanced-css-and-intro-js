@@ -230,20 +230,27 @@ console.log(changeName(artists, 8, "Vincent Van Gogh"))
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+    return `The artist at index ${array[index].id} is ${array[index].name}.`
   }
-  
+  console.log(getArtistByIndex(artists, 0))
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+// function get20s(array){
+  
+//   for (let i=0; i<array.length-1; i++){
+//     array[i].years.split([" - "]){
+//       if(array[i].years.split >)
+//     }
+//   //   if(array[i].years >= 1900 - 2000){
+//   //     lifespan.push(array[i][name])
+//   //   }
+//   // }
 
-  /* Code here */
-
-}
-
+// }
+// console.log(get20s(artists))
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -255,10 +262,11 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(array, index) {
+    array.splice(index,1)
+    console.log(array.length)
   }
-  
+removeArtist(artists, 0)
  
 
 /**
@@ -274,11 +282,15 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, id, name, years, genre, nationality, bio){
 
-    /* Code here */
 
+    array.push(id, name, years, genre, nationality, bio)
+
+    return array
   }
+
+console.log(addArtist(artists, 20, "tom sherman", "1988 - present", "web dev", "american", "i'm not a businessman, i'm a business, man."))
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -288,12 +300,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array){
+prolific = [];
+for( let i=0; i<array.length-1; i++){
+  if (array[i].paintings > 100) {
+    prolific.push(array[i].name)
+    // prolific.push(array["name"])
+  }
 }
-
+return prolific;
+}
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
